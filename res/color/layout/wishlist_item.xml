@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/baseline_delete_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <ImageView
+            android:id="@+id/wishPic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_home"
+            android:scaleType="centerCrop"
+            android:backgroundTint="#DCD8D8"/>
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginEnd="10dp"
+            android:text="Rent:"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/wishrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/baseline_rupee"
+            android:text="0"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/baseline_home_type"
+            android:drawablePadding="1dp"
+            android:textColorHint="#372A2A"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/wishtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="10dp"
+            android:drawablePadding="10dp"
+            android:text="0"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateIds" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:drawableLeft="@drawable/baseline_location"
+            android:drawableTint="#F46363"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/wishloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:text="0"
+            android:drawablePadding="5dp"
+            android:drawableTint="#F46363"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/wishcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wishloc"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="0"
+            android:drawablePadding="5dp"
+            android:drawableTint="#F46363"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/wavail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wishcity"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="230dp"
+            android:text="Unavailable"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:background="#DDD9D9"
+            android:textStyle="bold|italic"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

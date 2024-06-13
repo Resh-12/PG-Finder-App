@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Filter">
+    <TextView
+        android:id="@+id/rs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textStyle="italic|bold"
+        android:text="Price range:"
+        android:textSize="25sp"
+        android:textColor="#069C9F"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rs"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:id="@+id/ct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textStyle="italic|bold"
+        android:text="City:"
+        android:textSize="25sp"
+        android:textColor="#069C9F"
+        android:layout_below="@id/range"
+        android:layout_marginTop="40dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ct"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp"
+        android:background="@drawable/layout"
+        android:id="@+id/rel">
+        <CheckBox
+            android:id="@+id/cbudupi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="udupi"
+            android:textSize="25sp"/>
+        <CheckBox
+            android:id="@+id/cbbhr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bhramavar"
+            android:layout_below="@+id/cbudupi"
+            android:textSize="25sp"/>
+        <CheckBox
+            android:id="@+id/cbkarkal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="karkala"
+            android:layout_marginStart="180dp"
+            android:textSize="25sp"/>
+        <CheckBox
+            android:id="@+id/cbkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kundapur"
+            android:layout_marginStart="180dp"
+            android:layout_below="@+id/cbkarkal"
+            android:textSize="25sp"/>
+
+
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="Apply"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/btn_bg"/>
+
+
+</RelativeLayout>
